@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sealant Calculator</title>
+  </head>
+  <body class="p-2">
+    <div class="grid grid-cols-2 gap-4 auto-rows-auto">
+      <div><em>dᵣ –</em> Rim diameter (mm)<br />622mm is 700c/29"</div>
+      <div>
+        <input id="rimDiameter" type="number" value="622" class="text-right" />
+        mm
+      </div>
+      <div><em>dₜ –</em> Measured tire diameter (mm)</div>
+      <div>
+        <input id="tireDiameter" type="number" value="33" class="text-right" />
+        mm
+      </div>
+      <div><em>s –</em> Sealant depth in μm</div>
+      <div>
+        <input id="sealantDepth" type="number" value="300" class="text-right" />
+        μm
+      </div>
+      <div>
+        <em>rᵣ = dᵣ / 2</em><br />
+        Radius of rim
+      </div>
+      <div><input type="number" disabled id="rim" class="text-right" /> mm</div>
+      <div>
+        <em>rₜ = dₜ / 2</em><br />
+        Radius of tire
+      </div>
+      <div>
+        <input type="number" disabled id="tire" class="text-right" /> mm
+      </div>
+      <div>
+        <em>Rₜ = rₜ + rᵣ</em><br />
+        Outer radius (rim + tire)
+      </div>
+      <div>
+        <input type="number" disabled id="outer" class="text-right" /> mm
+      </div>
+      <div>
+        <em>A = 4π² Rₜ ⋅ rₜ</em><br />
+        Approx. surface area inside tire/rim<br />
+        (including tire thickness here)
+      </div>
+      <div>
+        <input type="number" disabled id="area" class="text-right" /> mm²
+      </div>
+      <div>
+        <em>V = A ⋅ s</em><br />
+        Baseline sealant volume
+      </div>
+      <div>
+        <input type="number" disabled id="sealantVolume" class="text-right" />
+        mL
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
