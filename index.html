@@ -31,23 +31,38 @@
         μm
       </div>
       <div>
+        <em>V = A ⋅ s</em><br />
+        Baseline sealant volume
+      </div>
+      <div class="font-bold">
+        <span id="sealantVolume" class="inline-block w-37 text-right font-bold"></span>
+        mL
+      </div>
+      <div class="col-span-full">
+        <hr />
+      </div>
+
+      <div>
         <em>rᵣ = dᵣ / 2</em><br />
         Radius of rim
       </div>
-      <div><input type="number" disabled id="rim" class="w-36 text-right" /> mm</div>
+      <div>
+        <span id="rim" class="inline-block w-37 text-right"></span>
+        mm
+      </div>
       <div>
         <em>rₜ = dₜ / 2</em><br />
         Radius of tire
       </div>
       <div>
-        <input type="number" disabled id="tire" class="w-36 text-right" /> mm
+        <span id="tire" class="inline-block w-37 text-right"></span> mm
       </div>
       <div>
         <em>Rₜ = rₜ + rᵣ</em><br />
         Outer radius (rim + tire)
       </div>
       <div>
-        <input type="number" disabled id="outer" class="w-36 text-right" /> mm
+        <span id="outer" class="inline-block w-37 text-right"></span> mm
       </div>
       <div>
         <em>A = 4π² Rₜ ⋅ rₜ</em><br />
@@ -55,15 +70,7 @@
         (including tire thickness here)
       </div>
       <div>
-        <input type="number" disabled id="area" class="w-36 text-right" /> mm²
-      </div>
-      <div>
-        <em>V = A ⋅ s</em><br />
-        Baseline sealant volume
-      </div>
-      <div class="font-bold">
-        <input type="number" disabled id="sealantVolume" class="w-36 text-right font-bold" />
-        mL
+        <span id="area" class="inline-block w-37 text-right"></span> mm²
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>

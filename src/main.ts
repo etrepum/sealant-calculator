@@ -42,9 +42,9 @@ function recalc() {
   function isCalcId(k: string): k is keyof typeof calcs {
     return k in calcs;
   }
-  for (const input of inputs) {
-    if (isCalcId(input.id)) {
-      input.value = calcs[input.id].toFixed(2);
+  for (const output of document.querySelectorAll('span[id]')) {
+    if (isCalcId(output.id)) {
+      output.textContent = calcs[output.id].toFixed(2);
     }
   }
   const url = new URL(window.location.href);
